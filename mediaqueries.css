@@ -34,11 +34,14 @@
     .profile-pic,
     .about-pic {
         width: 275px;
-        height: 275px;
+        max-width: 90%;
+        height: auto;
         margin: 0 auto 2rem;
     }
-    /* Prevent experience section from exceeding screen width */
-.experience-details-container {
+  .about-pic{
+    margin-bottom: 0rem;
+  }
+    .experience-details-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0; /* keeps it aligned with other sections */
@@ -82,6 +85,20 @@
 .about-containers > div {
     flex: 1 1 300px;
     box-sizing: border-box;
+}
+.section__text__p2 {
+    font-size: 1.25rem;
+}
+.title {
+    font-size: 2rem;
+}
+.project-img1 {
+    border-radius: 2rem;
+    width: 90%;
+    height: 288px;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
 }
 }
 

@@ -403,7 +403,19 @@ article .icon {
 .project-img {
     border-radius: 2rem;
     width: 90%;
-    height: 90%;
+    max-height: 345px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.project-img1 {
+    border-radius: 2rem;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
 }
 
 .project-title {
