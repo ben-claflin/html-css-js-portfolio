@@ -3,7 +3,7 @@
     height: 83vh;
     margin-bottom: 6rem;
    }
-   .about-containers {
+   .about-containers, .writing-containers {
     flex-wrap: wrap;
    }
 }
@@ -37,20 +37,56 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
-    .experience-containers,
-    .about-containers {
-        grid-gap: 1rem;
-        margin-top: 0;
-        padding: 0;
-    }
-    .experience-subtitle {
-        margin-bottom: 1rem;
-    }
-    
+    /* Prevent experience section from exceeding screen width */
+.experience-details-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; /* keeps it aligned with other sections */
+  box-sizing: border-box;
+}
+
+.experience-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.details-containers {
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 1px solid #ccc; /* if you’re using borders */
+  border-radius: 8px;
+  background: #fff; /* optional */
+}
+
+.experience-subtitle {
+    margin-bottom: 1rem;
+}
+.article-containers article {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal halves */
+  align-items: center;           /* vertically center */
+  text-align: center;
+}
+
+.article-containers article img {
+  justify-self: center;          /* center checkmark in left half */
+}
+
+.article-containers article div {
+  justify-self: center;          /* center skill text in right half */
+}
+.about-containers > div {
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
 }
 
 @media screen and (max-width: 1200px) {
-    ##contact, 
+    #contact, 
     footer {
         height: 40vh;
     }
@@ -95,5 +131,16 @@
   .contact-info-upper-container {
     flex-direction: column;
     align-items: center;
+  }
+  #contact {
+    margin: 2rem 0;
+    padding: 1rem, 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .article-containers article {
+    flex: 1 1 100%;
+    min-width: unset;
   }
 }

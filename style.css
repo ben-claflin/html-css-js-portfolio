@@ -278,7 +278,7 @@ section {
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 .about-details-container {
@@ -291,10 +291,10 @@ section {
     display: flex;
 }
 
-.about-pic {
-    border-radius: 2rem;
-    height: 400px;
-    width: 400px;
+.about-details-container {
+    flex: 1;
+    margin: 0 2rem;
+    padding: 0;
 }
 
 .arrow {
@@ -315,14 +315,28 @@ section {
 
 .section-container {
     gap: 4rem;
-    height: 80%;
+    height: 534px;
+    margin-top: 1rem;
 }
 
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+#about .text-container {
+    margin: 0 2rem;
 }
+
+.about-pic {
+    max-width: 400px;     
+    margin: 0 auto 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: auto;         
+}
+
+.about-pic img {
+    width: 100%;
+    height: auto;        
+    display: block;
+}
+
 
 /* EXPERIENCE */
 
@@ -413,10 +427,11 @@ article .icon {
     background: rgb(250,250,250);
 }
 
+
 .writing-img {
     border-radius: 2rem;
-    width: 340px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
 }
 
 .writing-title {
