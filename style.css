@@ -162,6 +162,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 80vh;
 }
@@ -387,6 +388,7 @@ article .icon {
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-height: ;
 }
 
 /* PROJECTS */
@@ -401,15 +403,6 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    max-height: 345px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-.project-img1 {
     border-radius: 2rem;
     width: 90%;
     height: auto;
